@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/result', [App\Http\Controllers\CalculatorController::class, 'calculate'])->name('calculate.result');

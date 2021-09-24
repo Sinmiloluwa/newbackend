@@ -18,5 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('result', [App\Controllers\CalculatorController::class, 'calculate']);
-Route::get('faq/{id}', [App\Controllers\CalculatorController::class, 'answers']);
+Route::post('/result', [App\Http\Controllers\CalculatorController::class, 'calculate']);
+Route::get('/faq/{id}', [App\Http\Controllers\CalculatorController::class, 'answers']);
